@@ -1,0 +1,42 @@
+[
+  {
+    "email": {"id": "email-01", "sender": "billing@acme.example", "subject": "Invoice INV-2026-091", "body": "Please find our invoice for September consulting: EUR 1,200, due on 30 September. Please arrange payment."},
+    "expected_intent": "invoice"
+  },
+  {
+    "email": {"id": "email-02", "sender": "finance@studio.example", "subject": "Payment reminder", "body": "Invoice ST-442 for EUR 850 was due last Friday. Could you confirm when the outstanding balance will be settled?"},
+    "expected_intent": "invoice"
+  },
+  {
+    "email": {"id": "email-03", "sender": "customer@retail.example", "subject": "Could you resend the document?", "body": "We lost the invoice for order 7182. Please send a copy so our accounting team can pay it."},
+    "expected_intent": "invoice"
+  },
+  {
+    "email": {"id": "email-04", "sender": "accounts@design.example", "subject": "Incorrect company address", "body": "Please correct invoice D-204 to show our new address: 12 Market Street. We need an updated invoice before processing payment."},
+    "expected_intent": "invoice"
+  },
+  {
+    "email": {"id": "email-05", "sender": "buyer@services.example", "subject": "Duplicate line item", "body": "Invoice S-880 includes the installation fee twice. Please remove the duplicate EUR 90 charge and issue a corrected bill."},
+    "expected_intent": "invoice"
+  },
+  {
+    "email": {"id": "email-06", "sender": "alex@partner.example", "subject": "Meeting next Tuesday", "body": "Are you available at 10:00 next Tuesday to discuss the project timeline? I can send a calendar invitation."},
+    "expected_intent": "general"
+  },
+  {
+    "email": {"id": "email-07", "sender": "prospect@shop.example", "subject": "Product availability", "body": "Do you have the blue desk lamp in stock, and how long does delivery to Berlin take?"},
+    "expected_intent": "general"
+  },
+  {
+    "email": {"id": "email-08", "sender": "user@company.example", "subject": "Cannot sign in", "body": "The password reset link expired. Can you help me recover access to my account?"},
+    "expected_intent": "general"
+  },
+  {
+    "email": {"id": "email-09", "sender": "news@software.example", "subject": "New invoice dashboard features", "body": "Our monthly newsletter is here! Explore the redesigned invoice dashboard at our free product webinar this Thursday."},
+    "expected_intent": "general"
+  },
+  {
+    "email": {"id": "email-10", "sender": "sam@team.example", "subject": "Lunch on Friday?", "body": "Thanks for helping with the invoice last week. Would you like to grab lunch on Friday at noon?"},
+    "expected_intent": "general"
+  }
+]
